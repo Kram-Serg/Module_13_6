@@ -78,8 +78,7 @@ async def send_calories(message, state):
 
 @dp.message_handler(commands=['start'])
 async def star_massage(message):
-    await message.answer(f'Привет! Я бот помогающий твоему здоровью.\n '
-                         f'Введите слово "Calories" чтобы узнать Вашу суточную норму калорий', reply_markup=kb)
+    await message.answer(f'Привет! Я бот помогающий твоему здоровью', reply_markup=kb)
 
 @dp.message_handler()
 async def all_message(message):
